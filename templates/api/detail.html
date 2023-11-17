@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'api/base.html'%}
+{% block body_block %}
+<div class="jumbotron">
+    <div class="container" align='center'>
+        <h1>Fill up your details here</h1>
+        <table border=3>
+        
+        </table>
+       
+        
+        <form method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" name="" value="Submit">
+             </form>
+    </div>
+    
+
+</div>
+
+{% endblock %}
